@@ -44,16 +44,6 @@ const switchPlayer = () => {
   player1El.classList.toggle('player--active');
 };
 
-// const disableBtn = () => {
-//   btnRoll.disabled = true;
-//   btnHold.disabled = true;
-// }
-
-// const enableBtn = () => {
-//   btnRoll.disabled = false;
-//   btnHold.disabled = false;
-// }
-
 // rolling dice functionality
 btnRoll.addEventListener('click', () => {
   if (playing) {
@@ -75,9 +65,6 @@ btnRoll.addEventListener('click', () => {
     } else {
       // switch to next player
       switchPlayer();
-      // document.querySelector(`player--${activePlayer}`).classList.remove('player--active');
-      // activePlayer = activePlayer === 0 ? 1 : 0;
-      // document.querySelector(`player--${activePlayer}`).classList.add('player--active');
     }
   }
 });
